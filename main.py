@@ -1,6 +1,6 @@
 #import data--------------------------------------------------------------------------------------
 from csv import reader
-with open('/content/drive/MyDrive/午餐/午餐訂購 (回覆).csv', 'r', encoding='utf-8') as csv_file:
+with open('input.csv', 'r', encoding='utf-8') as csv_file:
     csv_reader = reader(csv_file)
     data_list = list(csv_reader)
     print(data_list)
@@ -83,7 +83,7 @@ money_day_kghs[7] = money_day_kghs[2] + money_day_kghs[3] + money_day_kghs[4] + 
 
 
 #printCSV--------------------------------------------------------------------------------------
-with open('/content/drive/MyDrive/午餐/雄中.csv', 'w', newline='') as csvfile:
+with open('schoolA.csv', 'w', newline='') as csvfile:
   # 建立 CSV 檔寫入器
   writer = csv.writer(csvfile)
   # 寫入
@@ -91,7 +91,7 @@ with open('/content/drive/MyDrive/午餐/雄中.csv', 'w', newline='') as csvfil
   writer.writerow([' '])
   writer.writerow(meals_count_kshs)
   writer.writerow(money_day_kshs)
-with open('/content/drive/MyDrive/午餐/雄女.csv', 'w', newline='') as csvfile:
+with open('schoolA.csv', 'w', newline='') as csvfile:
   # 建立 CSV 檔寫入器
   writer = csv.writer(csvfile)
   # 寫入
